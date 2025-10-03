@@ -64,6 +64,6 @@ offset_top = 255.0
 offset_right = 586.0
 offset_bottom = 322.0
 theme_override_font_sizes/font_size = 48
-text = "Good Luck!
+text = "Good Luck! (don't stick \"Q\")
 :)"
 horizontal_alignment = 1
