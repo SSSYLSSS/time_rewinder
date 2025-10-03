@@ -23,7 +23,18 @@ position = Vector2(955.9999, 484)
 scale = Vector2(10, 0.9409)
 
 [node name="platform3" parent="." instance=ExtResource("1_lqawf")]
-position = Vector2(742.00006, 1310)
+position = Vector2(744.00006, 1230)
 scale = Vector2(10, 0.9409)
 
 [node name="WorldEnvironment" parent="." instance=ExtResource("3_x3ebl")]
+
+[node name="platform4thiscancopy" parent="." instance=ExtResource("1_lqawf")]
+position = Vector2(-5.999998, 1682)
+scale = Vector2(20, 0.97)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 139.0
+offset_top = 350.0
+offset_right = 179.0
+offset_bottom = 373.0
+text = "Hold \"T\" to time rewind"
