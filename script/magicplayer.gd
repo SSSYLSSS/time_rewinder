@@ -7,6 +7,7 @@ const JUMP_VELOCITY = -800.0
 var is_jumping := false
 
 @onready var rewinder: Rewinder = $Rewinder
+@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
 func _ready() -> void:
 	$Label.visible=false
@@ -16,12 +17,14 @@ func custom_data():
 	return {
 		"texture": texture,
 		"animation": $AnimatedSprite2D.animation,
-		"flip_h": $AnimatedSprite2D.flip_h
+		"flip_h": $AnimatedSprite2D.flip_h,
+		"flip_v": $AnimatedSprite2D.flip_v
 	}
 
 func apply_data(data):
 	$AnimatedSprite2D.animation = data.animation
 	$AnimatedSprite2D.flip_h = data.flip_h
+	$AnimatedSprite2D.flip_v = data.flip_v
 
 func _physics_process(delta: float) -> void: 
 	if rewinder.is_rewinding:
