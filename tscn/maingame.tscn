@@ -14,6 +14,17 @@ scale = Vector2(3, 3)
 position = Vector2(-0.33333334, -14.000005)
 scale = Vector2(0.33333334, 0.33333334)
 
+[node name="Label" type="Label" parent="magicplayer"]
+offset_left = 9.666667
+offset_top = -38.66667
+offset_right = 144.66667
+offset_bottom = 20.333328
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+text = ":(
+OMG,我颠倒了"
+metadata/_edit_use_anchors_ = true
+
 [node name="platform" parent="." instance=ExtResource("1_lqawf")]
 position = Vector2(5.0000005, 609)
 scale = Vector2(20, 0.97)
