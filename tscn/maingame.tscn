@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://b6xnuswmll6x8"]
+
+[ext_resource type="PackedScene" uid="uid://blki4w6upcqa8" path="res://tscn/platform.tscn" id="1_lqawf"]
+[ext_resource type="PackedScene" uid="uid://dn22ovmkbxy1d" path="res://tscn/magicplayer.tscn" id="2_x3ebl"]
+[ext_resource type="PackedScene" uid="uid://chdmu5kuctnay" path="res://tscn/world_environment.tscn" id="3_x3ebl"]
+
+[node name="Maingame" type="Node2D"]
+
+[node name="magicplayer" parent="." instance=ExtResource("2_x3ebl")]
+position = Vector2(86, 530)
+scale = Vector2(3, 3)
+
+[node name="Camera2D" type="Camera2D" parent="magicplayer"]
+position = Vector2(-0.33333334, -14.000005)
+scale = Vector2(0.33333334, 0.33333334)
+
+[node name="platform" parent="." instance=ExtResource("1_lqawf")]
+position = Vector2(5.0000005, 609)
+scale = Vector2(20, 0.97)
+
+[node name="platform2" parent="." instance=ExtResource("1_lqawf")]
+position = Vector2(955.9999, 484)
+scale = Vector2(10, 0.9409)
+
+[node name="platform3" parent="." instance=ExtResource("1_lqawf")]
+position = Vector2(742.00006, 1310)
+scale = Vector2(10, 0.9409)
+
+[node name="WorldEnvironment" parent="." instance=ExtResource("3_x3ebl")]
