@@ -8,6 +8,7 @@ var is_jumping := false
 
 @onready var rewinder: Rewinder = $Rewinder
 
+
 func custom_data():
 	var texture = $AnimatedSprite2D.sprite_frames.get_frame_texture($AnimatedSprite2D.animation, $AnimatedSprite2D.frame)
 	return {
@@ -58,4 +59,7 @@ func _physics_process(delta: float) -> void:
 	if direction != 0:
 		$AnimatedSprite2D.flip_h = direction < 0
 	
+	if Input.is_action_just_pressed("upsidedown"):
+		$AnimatedSprite2D.flip_v = 1
+
 	move_and_slide()
