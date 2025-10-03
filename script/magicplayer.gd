@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -600.0
+const SPEED = 400.0
+const JUMP_VELOCITY = -800.0
 
 # 添加变量来跟踪跳跃状态
 var is_jumping := false

@@ -2,6 +2,9 @@
 
 [sub_resource type="Environment" id="Environment_hdr15"]
 background_mode = 3
+tonemap_mode = 1
+tonemap_exposure = 1.99
+tonemap_white = 5.64
 glow_enabled = true
 glow_strength = 0.76
 glow_blend_mode = 1
